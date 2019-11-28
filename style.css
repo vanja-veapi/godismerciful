@@ -1,0 +1,195 @@
+*
+{
+    margin: 0px auto;
+    padding: 0px;
+}
+#header
+{
+    color: black;
+    margin-top: 10px;
+    height: 500px;
+    width: 95%;
+    border-bottom-style: none;
+    background: url('../img/pozadina.jpeg') no-repeat center; /*Ako stavim fixed znaci da ce slika ostati tu gde jeste kada je */
+    background-position-y: -300px;
+
+}
+/*body
+{
+    background-size: cover;
+    background: linear-gradient(180deg, rgba(210,6,6,1) 0%, rgba(0,0,0,1) 50%, rgba(38,167,20,1) 100%);
+}*/
+#header h1
+{
+    margin-top: 150px;
+    font-family: sans-serif;
+    color: white;
+    font-size: 60px;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.meni
+{
+    float: right;
+    margin-top: 25px;
+    border-bottom: 1px solid black;
+    padding-bottom: 9px;
+}
+.meni ul ul
+{
+    display: none;
+}
+.meni ul li:hover > ul
+{
+    display: block;
+}
+.cleaner
+{
+    clear: both;
+}
+ul li:hover a 
+{
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
+ul,li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+ .belo {
+    color:white;
+
+}
+#sredina
+{
+    font-family: sans-serif;
+    height: 700px;
+    width: 95%;
+    background: lightgray;
+    background-color: rgba(211,211,211,0.4);
+}
+.h1
+{
+    margin: 50px auto;
+    font-size: 30px;
+}
+.p
+{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+.onClickTextOverImage
+{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    transition: .3s;
+}
+.onClickTextOverImage img
+{
+    transition:.3s;
+    border-radius:4px;
+}
+.onClickTextOverImage:hover img
+{
+    filter:blur(2px) brightness(60%);
+    box-shadow:0 0 16px cyan;
+    margin-top:10px;
+}
+.onClickTextOverImage :not(img)
+{
+    z-index:1;
+    top:30%;
+    width:100%;
+    text-align:center;
+    color:#ffff;
+    transition:.3s;
+  }
+  
+.onClickTextOverImage:hover :not(img)
+{
+    opacity:100%;
+}
+.onClickTextOverImage p
+{
+    /*display: grid;*/
+    opacity:1%;
+    font-size: 15px;
+    -webkit-text-stroke-color: white;
+    color: black;
+}
+#slike
+{
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-around;
+}
+h1
+{
+    text-align: center;
+}
+img
+{
+    display: inline-block;
+    margin: 35px 0px 35px 0px;
+}
+
+#footer
+{
+    text-align: center;
+    border-top: 1px solid black;
+    height: 70px;
+    width: 95%;
+    background-color: rgba(211,211,211,0.4);
+}
+#footer h3
+{
+    font-family: sans-serif;
+    margin: 25px;
+}
